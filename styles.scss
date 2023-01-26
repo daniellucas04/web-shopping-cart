@@ -22,8 +22,8 @@ body{
   }
   
   > main {
-    background: white;
     padding: 0 30px;
+    margin: 4em;
   
     .page-title{
       font-size: 40px;
@@ -39,16 +39,23 @@ body{
       }
   
       aside{
-        min-width: 300px;
+        min-width: 350px;
         margin-left: 30px;
+        transform: scale(1.08);
+        margin-top: 3.2em;
         
         .summary{
           background: #eee;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          border: 1px solid #ddd;
 
           > header{
-            font-size: 15px;
+            font-size: 20px;
             padding: 15px;
             border-bottom: 1px solid #ddd;
+            letter-spacing: 1px;
           }
           
           > main{
@@ -56,12 +63,13 @@ body{
             flex-direction: column;
             justify-content: space-between;
             padding: 20px;
-            font-size: 13px;
+            font-size: 16px;
 
             > div {
               display: flex;
               justify-content: space-between;
               margin-bottom: 10px;
+              color: #666;
             }
 
             > button {
@@ -83,7 +91,7 @@ body{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            font-size: 15px;
+            font-size:20px;
             background-color: #ddd;
             padding: 15px;
           }
@@ -93,12 +101,12 @@ body{
           border: none;
           color: white;
           background: green;
-          height: 40px;
+          height: 50px;
           width: 100%;
           margin-top: 10px;
 
-          font-size: 15px;
-          font-weight: 600;
+          font-size: 16px;
+          text-transform: uppercase;
 
           &:hover{
             background-color: rgb(0, 116, 0);
